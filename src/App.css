@@ -3,12 +3,12 @@
   --transparent: #ffffff00;
   --white: #ffffff;
   --black: #000000;
-  --lightBrown: #a47864;
-  --darkBrown: #563e33;
-  --lightPink: #dcc2d4;
-  --darkPink: #9d6d8e;
-  --lightBlue: #889fc2;
-  --darkBlue: #13135a;
+  --lightBrown: #6f816c;
+  --darkBrown: #b3c1b0;
+  --lightPink: #505052;
+  --darkPink: #cbd5c9;
+  --lightBlue: #505052;
+  --darkBlue: #272758;
 }
 
 
@@ -354,16 +354,16 @@ body {
     width: 30%;
     align-content: center;
     font-family: "HeroBold", sans-serif;
-    border: 5px solid var(--white);
+    border: 3px solid var(--white);
     font-size: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
   }
 
   & .studies:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: var(--white);
     color: var(--lightBrown);
-    box-shadow: 0px 8px 20px var(--white);
+    box-shadow: 0px 4px 10px var(--white);
   }
 
   & .studiesTitle {
@@ -384,16 +384,16 @@ body {
     padding-top: 2%;
     align-content: center;
     font-family: "HeroBold", sans-serif;
-    border: 5px solid var(--white);
+    border: 3px solid var(--white);
     font-size: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
   }
 
   & .experience:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: var(--white);
     color: var(--lightBrown);
-    box-shadow: 0px 8px 20px var(--white);
+    box-shadow: 0px 4px 10px var(--white);
   }
 
   & .experience:hover #experience a {
@@ -437,16 +437,16 @@ body {
     width: 30%;
     align-content: center;
     font-family: "HeroBold", sans-serif;
-    border: 5px solid var(--white);
+    border: 3px solid var(--white);
     font-size: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
   }
 
   & .caseStudy:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: var(--white);
     color: var(--lightBrown);
-    box-shadow: 0px 8px 20px var(--white);
+    box-shadow: 0px 4px 10px var(--white);
   }
 
   & .caseStudy:hover #caseStudy a {
