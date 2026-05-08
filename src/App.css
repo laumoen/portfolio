@@ -1,7 +1,12 @@
 /* paleta de colores */
 :root {
-  --light: #ececec;
-  --dark: #313131;
+  --light: #ffffff;
+  --grey: #858585;
+  --dark: #000000;
+  --transparentMid: #00000050;
+  --transparentLight: #00000025;
+  --transparentDark: #00000075;
+  --transparent: #ffffff00;
 }
 
 
@@ -23,7 +28,7 @@ body {
   background-attachment: scroll;
   background-size: cover;
   font-family: "HeroRegular", sans-serif;
-  background-image: radial-gradient(circle, #c7c0c4, #c8b6c4, #c4acc7, #bda4cc, #b09dd3, #a88cc2, #a17bb1, #996a9f, #8b4e70, #733746, #552523, #351602);
+  background-image: url(https://wallpapers.com/images/hd/fondo-aura-vibrante-9a9mkxm30yhawkg6.jpg);
 }
 
 
@@ -341,7 +346,7 @@ body {
   }
 
   & .studies {
-    background-color: #ffffff25;
+    background-color: var(--transparentMid);
     color: var(--light);
     height: 65vh;
     text-align: center;
@@ -355,7 +360,7 @@ body {
 
   & .studies:hover {
     transform: scale(1.05);
-    background-color: var(--light);
+    background-color: var(--transparentDark);
     color: var(--light);
     box-shadow: 0px 4px 10px var(--light);
   }
@@ -370,7 +375,7 @@ body {
   }
 
   & .experience {
-    background-color: #ffffff25;
+    background-color: var(--transparentMid);
     color: var(--light);
     height: 65vh;
     text-align: center;
@@ -385,7 +390,7 @@ body {
 
   & .experience:hover {
     transform: scale(1.05);
-    background-color: var(--light);
+    background-color: var(--transparentDark);
     color: var(--light);
     box-shadow: 0px 4px 10px var(--light);
   }
@@ -418,13 +423,13 @@ body {
     }
 
     & a:hover {
-      color: var(--dark);
+      color: var(--light);
     }
   }
 
   & .caseStudy {
-    background-color: #ffffff25;
-    color: var(--dark);
+    background-color: var(--transparentMid);
+    color: var(--light);
     height: 65vh;
     text-align: center;
     padding-top: 2%;
@@ -438,7 +443,7 @@ body {
 
   & .caseStudy:hover {
     transform: scale(1.05);
-    background-color: var(--light);
+    background-color: var(--transparentDark);
     color: var(--light);
     box-shadow: 0px 4px 10px var(--light);
   }
@@ -471,7 +476,7 @@ body {
     }
 
     & a:hover {
-      color: var(--dark);
+      color: var(--light);
     }
   }
 }
@@ -511,7 +516,7 @@ body {
     margin-bottom: 2%;
     padding: 1%;
     color: var(--light);
-    background-color: #ffffff35;
+    background-color: var(--transparentLight);
     font-family: "HeroBold", sans-serif;
   }
 
@@ -559,26 +564,26 @@ body {
     margin-bottom: 4%;
     padding: 1%;
     border: 2.5px solid var(--light);
-    color: #ffffff35 !important;
-    background-color: var(--light);
+    color: var(--light) !important;
+    background-color: var(--transparentMid);
     font-family: "HeroBold", sans-serif;
   }
 
   & .sendButton:hover {
-    background-color: #ffffff35;
+    background-color: var(--transparentDark);
     border-color: var(--light);
     color: var(--light);
   }
 
   & .sendButton:active {
-    background-color: var(--dark);
-    border-color: var(--dark);
+    background-color: var(--transparentLight);
+    border-color: var(--light);
   }
 
   & input:focus,
   textarea:focus {
-    outline: var(--dark);
-    box-shadow: var(--dark);
+    outline: var(--light);
+    box-shadow: var(--light);
   }
 
   & .telephoneandsocials {
@@ -591,25 +596,26 @@ body {
 
   & ion-icon {
     color: var(--light);
-    border: 5px solid var(--light);
+    border: 2.5px solid var(--light);
     padding: 1rem;
     border-radius: 25%;
+    background-color: var(--transparentLight);
   }
 
   & ion-icon:hover {
-    color: var(--dark);
-    border-color: var(--dark);
+    color: var(--transparentDark);
+    border-color: var(--transparentDark);
   }
 
   & ion-icon:active {
-    color: var(--light);
-    border-color: var(--light);
+    color: var(--transparentMid);
+    border-color: var(--transparentMid);
   }
 }
 
 .tooltip-inner {
-  background-color: var(--dark) !important;
-  color: var(--dark) !important;
+  background-color: var(--transparentDark) !important;
+  color: var(--light) !important;
   font-family: "HeroBold", sans-serif;
   font-size: large;
   border-radius: 10px;
@@ -618,22 +624,22 @@ body {
 
 .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
 .bs-tooltip-top .tooltip-arrow::before {
-  border-top-color: var(--dark) !important;
+  border-top-color: var(--transparentDark) !important;
 }
 
 .bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before,
 .bs-tooltip-end .tooltip-arrow::before {
-  border-right-color: var(--dark) !important;
+  border-right-color: var(--transparentDark) !important;
 }
 
 .bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before,
 .bs-tooltip-bottom .tooltip-arrow::before {
-  border-bottom-color: ar(--darkPink) !important;
+  border-bottom-color: var(--transparentDark) !important;
 }
 
 .bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before,
 .bs-tooltip-start .tooltip-arrow::before {
-  border-left-color: ar(--darkPink) !important;
+  border-left-color: var(--transparentDark) !important;
 }
 
 /* responsive en móvil */

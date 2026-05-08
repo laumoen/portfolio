@@ -25,9 +25,9 @@ export const translations = {
       "desarrolladora back-end"
     ],
     soy: "y soy",
-    experienceTitle: "Proyecto full-stack",
-    studiesTitle: "Estudios",
-    caseStudyTitle: "Proyecto ux/ui",
+    experienceTitle: "Mi primer proyecto",
+    studiesTitle: "Estudio",
+    caseStudyTitle: "Estudio",
     adaptability: "Adaptabilidad",
     calma: "Calma",
     brainstorming: "Lluvia de ideas",
@@ -43,12 +43,12 @@ export const translations = {
     selfMotivation: "Motivación y determinación",
     teamwork: "Trabajo en equipo",
     studiesTitle2: "Desarrollo Full-stack",
-    studiesDuration: "6 meses, 2025",
-    studiesTitle3: "Diseño UX/UI",
-    studiesDuration2: "Actualmente",
+    studiesDuration: "Marzo 2025 - Septiembre 2025",
+    studiesTitle3: "",
+    studiesDuration2: "Octubre 2025 - Marzo 2026",
     experienceDescription: "¡Swipe Stories es el sitio web perfecto para cuando te aburres! Ideal para quienes disfrutan viendo películas y series, y también leyendo libros. Incluye un formulario deslizable que te facilita la vida y te da una respuesta sobre qué hacer según tus respuestas de sí o no.",
-    caseStudyTitle2: "Plan de acción",
-    caseStudyDescription: "He transformado una página web en una experiencia más clara y atractiva, comenzando con un análisis para identificar puntos débiles. Rediseñé la navegación para simplificar la interacción. El resultado: una interfaz diseñada para disfrutar sin perderse."
+    caseStudyTitle2: "Diseño UX/UI",
+    caseStudyDescription: "Google"
   },
   en: {
     welcome: "welcome to my portfolio! my name is",
@@ -67,9 +67,9 @@ export const translations = {
       "back-end developer"
     ],
     soy: "and i'm a",
-    experienceTitle: "Full-stack project",
-    studiesTitle: "Studies",
-    caseStudyTitle: "Ux/ui project",
+    experienceTitle: "My first project",
+    studiesTitle: "Study",
+    caseStudyTitle: "Study",
     adaptability: "Adaptability",
     calma: "Calmness",
     brainstorming: "Brainstorming",
@@ -85,12 +85,12 @@ export const translations = {
     selfMotivation: "Motivation and determination",
     teamwork: "Team work",
     experienceDescription: "Swipe Stories is the perfect website to use for when you're bored! For people who enjoy watching movies and tv shows and also reading books, including a swipeable form that makes life easy for you and gives you an answer on what to do based off your yes and no responses.",
-    studiesTitle2: "Full-stack Developer",
-    studiesDuration: "6 months, 2025",
-    studiesTitle3: "UX/UI Designer",
-    studiesDuration2: "Currently",
-    caseStudyTitle2: "Case Study",
-    caseStudyDescription: "I've transformed a website into a clearer and more engaging experience, starting with a usability analysis to identify weak points. I redesigned the navigation for a simplified interaction. The result: an interface designed so that each user enjoys their journey without getting lost along the way."
+    studiesTitle2: "Full-stack Dev.",
+    studiesDuration: "March 2025 - September 2025",
+    studiesTitle3: "UX/UI Design",
+    studiesDuration2: "October 2025 - March 2026",
+    caseStudyTitle2: "UX/UI Design",
+    caseStudyDescription: "Google"
   },
   ca: {
     welcome: "benvingut/da al meu portfoli! em dic",
@@ -109,9 +109,9 @@ export const translations = {
       "desenvolupadora back-end"
     ],
     soy: "i sóc",
-    experienceTitle: "Projecte full-stack",
-    studiesTitle: "Estudis",
-    caseStudyTitle: "Projecte ux/ui",
+    experienceTitle: "El meu primer projecte",
+    studiesTitle: "Estudi",
+    caseStudyTitle: "Estudi",
     adaptability: "Adaptabilitat",
     calma: "Serenitat",
     brainstorming: "Pluja d'idees",
@@ -127,12 +127,12 @@ export const translations = {
     selfMotivation: "Motivació i determinació",
     teamwork: "Treball en equip",
     studiesTitle2: "Desenv. Full-stack",
-    studiesDuration: "6 mesos, 2025",
+    studiesDuration: "Març 2025 - Septembre 2025",
     studiesTitle3: "Disseny UX/UI",
-    studiesDuration2: "Actualment",
+    studiesDuration2: "Octubre 2025 - Març 2026",
     experienceDescription: "Swipe Stories és el lloc web perfecte per quan t'avorreixes! Ideal per als qui gaudeixen veient pel·lícules i sèries, i també llegint llibres. Inclou un formulari lliscant que et facilita la vida i et dóna una resposta sobre què fer segons les respostes de si o no.",
-    caseStudyTitle2: "Pla d'acció",
-    caseStudyDescription: "He transformat una pàgina web en una experiència més clara i atractiva, començant amb una anàlisi per identificar punts febles. Vaig redissenyar la navegació per simplificar la interacció. El resultat: una interfície dissenyada per gaudir sense perdre's."
+    caseStudyTitle2: "Disseny UX/UI",
+    caseStudyDescription: "Google"
   }
 };
 
@@ -250,12 +250,6 @@ export default function App() {
 
     <div className="container">
 
-      <div className="whitestar0"><img src="src/assets/img/whitestar.webp" alt="white star" /></div>
-      <div className="whitestar1"><img src="src/assets/img/whitestar.webp" alt="white star" /></div>
-      <div className="whitestar2"><img src="src/assets/img/whitestar.webp" alt="white star" /></div>
-      <div className="whitestar3"><img src="src/assets/img/whitestar.webp" alt="white star" /></div>
-      <div className="whitestar4"><img src="src/assets/img/whitestar.webp" alt="white star" /></div>
-
       <div className="click">{hovered2}<br /></div>
 
       <audio ref={audioRef} src={iconSound}></audio>
@@ -332,29 +326,26 @@ export default function App() {
           <img className="idioma catalan" src="src/assets/img/catala.png" alt="catalán" onClick={() => setLang("ca")} onMouseEnter={() => setHovered2("fes clic i tradueix-me al català")} onMouseLeave={() => setHovered2("")} />
         </div>
         <div className="cv">
+          <div className="studies rounded-5">
+            <div className="studiesTitle">{translations[lang].studiesTitle}</div>
+            <div className="studiesName"> {translations[lang].studiesTitle2} </div>
+            <div>4 Geeks Academy</div>
+            <div> {translations[lang].studiesDuration} </div>
+          </div>
           <div className="experience rounded-5">
             <div className="experienceTitle">{translations[lang].experienceTitle}</div>
-            <div className="experienceName"> Swipe Stories </div>
+            <div className="experienceName"> " Swipe Stories " </div>
             <div className="experiencedescription"> {translations[lang].experienceDescription} </div>
             <div id="experience">
             <a href="https://github.com/laumoen/swipe-stories" target="_blank"><ion-icon name="log-out-outline"></ion-icon></a>
             </div>
           </div>
-          <div className="studies rounded-5">
-            <div className="studiesTitle">{translations[lang].studiesTitle}</div>
-            <div className="studiesName"> {translations[lang].studiesTitle2} </div>
-            <div>4Geeks Academy España</div>
-            <div> {translations[lang].studiesDuration} </div>
-            <div className="studiesName"> {translations[lang].studiesTitle3} </div>
-            <div>Fundae</div>
-            <div> {translations[lang].studiesDuration2} </div>
-          </div>
           <div className="caseStudy rounded-5">
             <div className="caseStudyTitle">{translations[lang].caseStudyTitle}</div>
             <div className="caseStudyName"> {translations[lang].caseStudyTitle2} </div>
             <div className="caseStudyDescription"> {translations[lang].caseStudyDescription} </div>
+            <div> {translations[lang].studiesDuration2} </div>
             <div id="caseStudy">
-            <a href="/"><ion-icon name="log-out-outline"></ion-icon></a>
             </div>
           </div>
         </div>
