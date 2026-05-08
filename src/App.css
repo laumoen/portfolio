@@ -28,7 +28,7 @@ body {
   background-attachment: scroll;
   background-size: cover;
   font-family: "HeroRegular", sans-serif;
-  background-image: url(https://wallpapers.com/images/hd/fondo-aura-vibrante-9a9mkxm30yhawkg6.jpg);
+  background-image: radial-gradient(circle, #e4e18c, #bcad65, #927c42, #685022, #3f2703);
 }
 
 
