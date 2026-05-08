@@ -1,14 +1,7 @@
 /* paleta de colores */
 :root {
-  --transparent: #ffffff00;
-  --white: #ffffff;
-  --black: #000000;
-  --lightBrown: #6f816c;
-  --darkBrown: #b3c1b0;
-  --lightPink: #505052;
-  --darkPink: #cbd5c9;
-  --lightBlue: #505052;
-  --darkBlue: #272758;
+  --light: #ececec;
+  --dark: #313131;
 }
 
 
@@ -30,6 +23,7 @@ body {
   background-attachment: scroll;
   background-size: cover;
   font-family: "HeroRegular", sans-serif;
+  background-image: radial-gradient(circle, #c7c0c4, #c8b6c4, #c4acc7, #bda4cc, #b09dd3, #a88cc2, #a17bb1, #996a9f, #8b4e70, #733746, #552523, #351602);
 }
 
 
@@ -45,7 +39,7 @@ body {
     left: 4rem;
     top: 40rem;
     font-family: "HeroBold", sans-serif;
-    color: var(--white);
+    color: var(--light);
   }
 
   & .whitestar0 img {
@@ -94,7 +88,7 @@ body {
   margin-top: 20%;
   margin-bottom: 20%;
   font-style: normal;
-  color: var(--white);
+  color: var(--light);
 
   & .lanyard {
     position: absolute;
@@ -150,7 +144,7 @@ body {
     justify-content: center;
     font-size: 3rem;
     margin-bottom: 2%;
-    color: var(--lightBlue);
+    color: var(--light);
 
     & .hache {
       font-family: "AstonScript", sans-serif;
@@ -163,7 +157,7 @@ body {
 
   .iconames {
     text-align: center;
-    color: var(--lightBlue);
+    color: var(--light);
     font-family: "HeroBold", sans-serif;
   }
 
@@ -211,7 +205,7 @@ body {
   & .softskills {
     display: flex;
     font-size: 3rem;
-    color: var(--lightBlue);
+    color: var(--light);
     justify-content: center;
     margin-top: 4rem;
     margin-bottom: 2rem;
@@ -227,7 +221,7 @@ body {
 
   & .softNames {
     text-align: center;
-    color: var(--lightBlue);
+    color: var(--light);
     font-family: "HeroBold", sans-serif;
   }
 
@@ -348,22 +342,22 @@ body {
 
   & .studies {
     background-color: #ffffff25;
-    color: var(--white);
+    color: var(--light);
     height: 65vh;
     text-align: center;
     width: 30%;
     align-content: center;
     font-family: "HeroBold", sans-serif;
-    border: 3px solid var(--white);
+    border: 3px solid var(--light);
     font-size: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
   }
 
   & .studies:hover {
     transform: scale(1.05);
-    background-color: var(--white);
-    color: var(--lightBrown);
-    box-shadow: 0px 4px 10px var(--white);
+    background-color: var(--light);
+    color: var(--light);
+    box-shadow: 0px 4px 10px var(--light);
   }
 
   & .studiesTitle {
@@ -377,27 +371,27 @@ body {
 
   & .experience {
     background-color: #ffffff25;
-    color: var(--white);
+    color: var(--light);
     height: 65vh;
     text-align: center;
     width: 30%;
     padding-top: 2%;
     align-content: center;
     font-family: "HeroBold", sans-serif;
-    border: 3px solid var(--white);
+    border: 3px solid var(--light);
     font-size: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
   }
 
   & .experience:hover {
     transform: scale(1.05);
-    background-color: var(--white);
-    color: var(--lightBrown);
-    box-shadow: 0px 4px 10px var(--white);
+    background-color: var(--light);
+    color: var(--light);
+    box-shadow: 0px 4px 10px var(--light);
   }
 
   & .experience:hover #experience a {
-    color: var(--lightBrown);
+    color: var(--light);
   }
 
   & .experienceTitle {
@@ -420,37 +414,37 @@ body {
 
     & a {
       text-decoration: none;
-      color: var(--white);
+      color: var(--light);
     }
 
     & a:hover {
-      color: var(--darkBrown);
+      color: var(--dark);
     }
   }
 
   & .caseStudy {
     background-color: #ffffff25;
-    color: var(--white);
+    color: var(--dark);
     height: 65vh;
     text-align: center;
     padding-top: 2%;
     width: 30%;
     align-content: center;
     font-family: "HeroBold", sans-serif;
-    border: 3px solid var(--white);
+    border: 3px solid var(--light);
     font-size: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
   }
 
   & .caseStudy:hover {
     transform: scale(1.05);
-    background-color: var(--white);
-    color: var(--lightBrown);
-    box-shadow: 0px 4px 10px var(--white);
+    background-color: var(--light);
+    color: var(--light);
+    box-shadow: 0px 4px 10px var(--light);
   }
 
   & .caseStudy:hover #caseStudy a {
-    color: var(--lightBrown);
+    color: var(--light);
   }
 
   & .caseStudyTitle {
@@ -473,11 +467,11 @@ body {
 
     & a {
       text-decoration: none;
-      color: var(--white);
+      color: var(--light);
     }
 
     & a:hover {
-      color: var(--darkBrown);
+      color: var(--dark);
     }
   }
 }
@@ -487,7 +481,7 @@ body {
 .footer {
   text-align: center;
   width: 100%;
-  color: var(--lightPink);
+  color: var(--light);
 
   & .contact {
     display: flex;
@@ -516,28 +510,28 @@ body {
     display: block;
     margin-bottom: 2%;
     padding: 1%;
-    color: var(--lightPink);
-    background-color: #ffffff50;
+    color: var(--light);
+    background-color: #ffffff35;
     font-family: "HeroBold", sans-serif;
   }
 
   & .input1 {
     width: 25%;
-    border-top: 5px;
-    border-bottom: 5px;
-    border-left: 5px;
-    border-right: 2.5px;
-    border-color: var(--lightPink);
+    border-top: 2.5px;
+    border-bottom: 2.5px;
+    border-left: 2.5px;
+    border-right: 1.5px;
+    border-color: var(--light);
     border-style: solid;
   }
 
   & .input2 {
     width: 25%;
-    border-top: 5px;
-    border-bottom: 5px;
-    border-left: 2.5px;
-    border-right: 5px;
-    border-color: var(--lightPink);
+    border-top: 2.5px;
+    border-bottom: 2.5px;
+    border-left: 1.5px;
+    border-right: 2.5px;
+    border-color: var(--light);
     border-style: solid;
   }
 
@@ -546,17 +540,17 @@ body {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    border: 5px solid var(--lightPink);
+    border: 2.5px solid var(--light);
     align-content: center;
   }
 
   & input::placeholder {
-    color: var(--lightPink);
+    color: var(--light);
     font-family: "HeroBold", sans-serif;
   }
 
   & textarea::placeholder {
-    color: var(--lightPink);
+    color: var(--light);
     font-family: "HeroBold", sans-serif;
   }
 
@@ -564,26 +558,27 @@ body {
     width: 50%;
     margin-bottom: 4%;
     padding: 1%;
-    border: 5px solid var(--lightPink);
-    color: var(--darkBrown);
-    background-color: var(--lightPink);
+    border: 2.5px solid var(--light);
+    color: #ffffff35 !important;
+    background-color: var(--light);
     font-family: "HeroBold", sans-serif;
   }
 
   & .sendButton:hover {
-    background-color: var(--darkPink);
-    border-color: var(--darkPink);
+    background-color: #ffffff35;
+    border-color: var(--light);
+    color: var(--light);
   }
 
   & .sendButton:active {
-    background-color: var(--darkPink);
-    border-color: var(--darkPink);
+    background-color: var(--dark);
+    border-color: var(--dark);
   }
 
   & input:focus,
   textarea:focus {
-    outline: var(--darkPink);
-    box-shadow: var(--darkPink);
+    outline: var(--dark);
+    box-shadow: var(--dark);
   }
 
   & .telephoneandsocials {
@@ -595,26 +590,26 @@ body {
   }
 
   & ion-icon {
-    color: var(--lightPink);
-    border: 5px solid var(--lightPink);
+    color: var(--light);
+    border: 5px solid var(--light);
     padding: 1rem;
     border-radius: 25%;
   }
 
   & ion-icon:hover {
-    color: var(--darkPink);
-    border-color: var(--darkPink);
+    color: var(--dark);
+    border-color: var(--dark);
   }
 
   & ion-icon:active {
-    color: var(--lightPink);
-    border-color: var(--lightPink);
+    color: var(--light);
+    border-color: var(--light);
   }
 }
 
 .tooltip-inner {
-  background-color: var(--darkPink) !important;
-  color: var(--darkBrown) !important;
+  background-color: var(--dark) !important;
+  color: var(--dark) !important;
   font-family: "HeroBold", sans-serif;
   font-size: large;
   border-radius: 10px;
@@ -623,12 +618,12 @@ body {
 
 .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before,
 .bs-tooltip-top .tooltip-arrow::before {
-  border-top-color: var(--darkPink) !important;
+  border-top-color: var(--dark) !important;
 }
 
 .bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before,
 .bs-tooltip-end .tooltip-arrow::before {
-  border-right-color: var(--darkPink) !important;
+  border-right-color: var(--dark) !important;
 }
 
 .bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before,
